@@ -1,0 +1,12 @@
+:root{
+    --headrerBG: rgb(44, 40, 36);
+    --titleHeader: rgb(245, 220, 204);
+    --defautTextColor:black; 
+}
+body{
+    margin: 0;
+}
+*{
+    font-family: 'EB Garamond', serif;
+    color: black;
+}
