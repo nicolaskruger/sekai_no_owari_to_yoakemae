@@ -2,6 +2,7 @@
     --headrerBG: rgb(44, 40, 36);
     --titleHeader: rgb(245, 220, 204);
     --defautTextColor:black; 
+    --houver: rgb(75, 48, 60);
 }
 
 #defaultH{
@@ -25,7 +26,7 @@
     font-weight: 100;
     top: 1vw;
 }
-#defaultH #title{
+#title{
     background-color: var(--titleHeader);
     /* border: 1vw solid rgb(245, 220, 204); */
     font-size: 3vw;
@@ -37,9 +38,11 @@
     justify-content: center;
 }
 .dropdown{
+    z-index: 10;
     position: relative;
     margin-right: 5vw;
     width: auto;
+    transition: 0.2s;
 }
 .dropbtn{
     background: var(--titleHeader);
@@ -69,14 +72,66 @@
 .dropdown-content a:last-child{
     border-radius: 0 0 5px 5px;
 }
+
 .dropdown-content a:hover{
     text-decoration: none;
-    background: rgb(75, 48, 60);
+    background: var(--houver);
 }
 .dropdown:hover .dropdown-content{
     display: block;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 7px 7px;
 }
 .dropdown:hover .dropbtn{
     border-radius: 5px 5px 0 0;
+}
+
+@media (max-width: 480px){
+    #defaultH h1{
+        font-size: 3.7vw;
+        font-weight: 100;
+        top: 1vw;
+    }
+    #defaultH #title{
+        background-color: var(--titleHeader);
+        font-size: 3vw;
+        margin-left: 2vw;
+        height: 6vw;
+        width: 40vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .dropbtn{
+        width: 20vw;
+        height: 6vw;
+        font-size: 3vw;
+    }
+    .dropdown-content a{
+        display: block;
+        width: 20vw;
+        height: 6vw;
+        text-align: center;
+        text-decoration: none;
+        font-size: 3vw;
+        margin: 1vw 0;
+        transition: 0.2s;
+        margin:0;
+    }
+}
+@media (min-width: 1100px){
+    #defaultH{
+        height: 10vh;
+    }
+    #defaultH h1{
+        /* background-color: rgb(245, 220, 204); */
+        /* border: 1vw solid rgb(245, 220, 204); */
+        font-size: 2vw;
+        /* margin-left: 2vw; */
+        font-weight: 100;
+        top: 1vw;
+    }
+    #title{
+        height: 4vw;
+        width: 25vw;
+    }
 }

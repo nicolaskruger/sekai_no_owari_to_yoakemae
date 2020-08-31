@@ -5,6 +5,14 @@
 }
 body{
     margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../img/beijo.png");
+}
+html{
+    height: 100vh;
 }
 *{
     font-family: 'EB Garamond', serif;

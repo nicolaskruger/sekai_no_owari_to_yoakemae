@@ -1,0 +1,28 @@
+#navegador{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vw;
+}
+#navegador button{
+    margin:0 1.5vw;
+    background: var(--titleHeader);
+    border:0;
+    transition: 0.2s;
+    display: flex;
+    border-radius: 2px;
+}
+#navegador button:hover{
+    background: var(--houver)
+}
+#navegador a{
+    font-size: 1.5vw;
+    text-decoration: none;
+    align-self: center;
+}
+@media(max-width:480px){
+
+    #navegador a{
+        font-size: 3vw;
+    }
+}
